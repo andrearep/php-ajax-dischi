@@ -8,7 +8,7 @@ const app = new Vue({
     },
     mounted() {
         axios.
-            get("/php-ajax-dischi/milestone_2/api/album.php")
+            get("./api/album.php")
             .then(resp => {
 
                 this.albums = resp.data;
